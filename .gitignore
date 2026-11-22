@@ -1,0 +1,26 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local packages and temporary output
+*.zip
+*.crx
+*.pem
+*.log
+node_modules/
+dist/
+release/
+coverage/
+
+# Local browser profiles and user data
+.chrome-profile/
+user-data/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+

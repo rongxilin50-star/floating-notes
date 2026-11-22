@@ -1,0 +1,11 @@
+{
+  "appName": { "message": "Floating Notes - Web Notes" },
+  "shortName": { "message": "Floating Notes" },
+  "appDescription": { "message": "Take local rich-text notes over web pages and fullscreen videos with timestamps and export." },
+  "actionTitle": { "message": "Show or hide Floating Notes" },
+  "restrictedPageTitle": { "message": "Chrome internal pages do not allow notes; open a regular webpage first" },
+  "toggleDescription": { "message": "Show or hide the current note" },
+  "newDescription": { "message": "Create a new note" },
+  "clickThroughDescription": { "message": "Toggle mouse click-through" }
+}
+

@@ -1,0 +1,41 @@
+name: Validate extension
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate manifest and JavaScript syntax
+        shell: bash
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('manifest.json', 'utf8'))"
+          for file in *.js; do node --check "$file"; done
+
+      - name: Verify required extension files
+        shell: bash
+        run: |
+          test -f manifest.json
+          test -f service-worker.js
+          test -f content.js
+          test -f options.html
+          test -f options.css
+          test -f options.js
+          test -f icons/icon-128.png
+
+

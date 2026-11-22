@@ -1,0 +1,11 @@
+{
+  "appName": { "message": "浮笺 - 网页悬浮便签" },
+  "shortName": { "message": "浮笺" },
+  "appDescription": { "message": "在网页和全屏视频上记录本地笔记，支持富文本、时间戳、拖拽与本地导出。" },
+  "actionTitle": { "message": "显示或隐藏浮笺" },
+  "restrictedPageTitle": { "message": "Chrome 内部页面不允许显示便签，请打开普通网页后使用" },
+  "toggleDescription": { "message": "显示或隐藏当前便签" },
+  "newDescription": { "message": "新建一篇笔记" },
+  "clickThroughDescription": { "message": "开启或关闭鼠标穿透" }
+}
+
