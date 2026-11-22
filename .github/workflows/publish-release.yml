@@ -27,5 +27,6 @@ jobs:
               --target "$GITHUB_SHA" \
               --title "Floating Notes v2.1.4" \
               --notes "Floating Notes v2.1.4 for Chrome and Microsoft Edge. Download the ZIP package, extract it, and load the extracted folder from the browser extensions page with Developer mode enabled."
+          fi
 
 
