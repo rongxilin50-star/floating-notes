@@ -9,7 +9,7 @@
 
 ## 下载正式安装包
 
-[下载 Floating Notes V2.1.4 安装包](downloads/Floating-Notes-v2.1.4.zip)
+[下载 Floating Notes V2.1.4 正式安装包](https://github.com/rongxilin50-star/floating-notes/releases/download/v2.1.4/Floating-Notes-v2.1.4.zip)
 
 下载后请先解压，再打开 `edge://extensions/` 或 `chrome://extensions/`，开启开发人员模式并选择“加载解压缩的扩展”。普通用户也可以等待 Edge 扩展商店审核通过后直接从商店安装。
 

@@ -1,0 +1,31 @@
+name: Publish v2.1.4 Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/publish-release.yml
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create release and upload extension package
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v2.1.4 >/dev/null 2>&1; then
+            gh release upload v2.1.4 downloads/Floating-Notes-v2.1.4.zip --clobber
+          else
+            gh release create v2.1.4 downloads/Floating-Notes-v2.1.4.zip \
+              --target "$GITHUB_SHA" \
+              --title "Floating Notes v2.1.4" \
+              --notes "Floating Notes v2.1.4 for Chrome and Microsoft Edge. Download the ZIP package, extract it, and load the extracted folder from the browser extensions page with Developer mode enabled."
+
+
